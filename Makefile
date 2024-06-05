@@ -6,7 +6,7 @@ PACKAGE_VERSION = $(THEOS_PACKAGE_BASE_VERSION)
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = YourTweakName
-YourTweakName_FILES = Tweak.xm
+YourTweakName_FILES = Tweak.x
 YourTweakName_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
