@@ -4,7 +4,7 @@ ARCHS = arm64
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = Nuggyy
-Nuggyy_FILES = Tweak.xm
+Nuggyy_FILES = Tweak.x
 Nuggyy_CFLAGS = -fobjc-arc
 
 # Adjust the filter plist file name here
