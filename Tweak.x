@@ -1,7 +1,13 @@
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
 
-// Hook the game's main view controller
+// Define an interface for MainGameViewController to inform the compiler about the class and its methods
+@interface MainGameViewController : UIViewController
+- (void)showModMenu;
+- (void)hack1;
+- (void)hack2;
+@end
+
 %hook MainGameViewController
 
 - (void)viewDidLoad {
@@ -16,7 +22,6 @@
     [self.view addSubview:modMenuButton];
 }
 
-// Method to display mod menu
 - (void)showModMenu {
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Mod Menu" message:nil preferredStyle:UIAlertControllerStyleAlert];
 
